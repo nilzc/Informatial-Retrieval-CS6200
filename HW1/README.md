@@ -16,5 +16,6 @@
 # Pseudo-relevance Feedback
 1. Retrieve top k documents using the models above.
 2. Identify interesting terms (heplful to retrieve relevant docs) in the documents.
+    * Note: the identifying process must be done by a program, not manually.
 3. Add the terms to the queries, and re-run the retrieval program.
-* Note: the identifying process must be done by a program, not manually.
+4. Use Elasticsearch API ``````
