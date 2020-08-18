@@ -37,5 +37,5 @@
 
 # Vertical Search
 Design an user interface to enter queries and fetch relevant docs from Elasticsearch server.
-* Imagine you're using Google, the search result may contain page title, page URL, a preview of the page content, etc.
+* Imagine you're using Google, the search result may contain several things: page title, page URL, a preview of the page content, etc.
 * You may use a local ES server or a cloud server.
