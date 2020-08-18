@@ -14,6 +14,7 @@
 1. Create an inverted list, which contains statistical info like term frequency, document frequency, ttf and so on.
     * Experiment with the affects of stemming and stop words removal on query performance.
 2. Create partial inverted lists for all terms in a single pass through the collection (to limit disk I/O).
+    * Create one file for every 1000 docs.
 3. Merge partial lists to a final index.
     * In this step, maintain a file to remember each term's position in a partial list is very helpful.
     * So that you can read a file from a specific position with a certain length.
