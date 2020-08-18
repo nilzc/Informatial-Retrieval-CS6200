@@ -19,7 +19,9 @@
     * Merge two partial lists at a time.
     * In this step, maintain a file to remember each term's position in a partial list is very helpful.
     * So that you can read a file from a specific position with a certain length.
-    
+4. You need to prepare two versions of index, compressed and not compressed.
+    * Use libraries like ```gzip``` to compress index.
+
 # Searching
 1. Run the same queries from HW1 using your own index and compare the results.
 2. Apply proximity search on a retireval model and observe the results.
