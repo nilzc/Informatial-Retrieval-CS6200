@@ -1,9 +1,10 @@
 # Objectives
-1. Compute the PageRank of every page you crawled. You may use any method mentioned in class:
-    * Iterative method (used in my code)
-    * Transition matrix
-    * Algebraic solution
-    sss
+1. Compute the PageRank of every page you crawled. 
+    * You may use any method mentioned in class:
+        * Iterative method (used in my code)
+        * Transition matrix
+        * Algebraic solution
+    * List the top 500 pages by the PageRank score. Also display in-links and out-links count for each page.
 2. HITS method:
     * Compute Hubs and Authority score for the pages in the collection.
     * A good Hub will point to many good Authorities, and a good Authority will be pointed by many good Hubs.
