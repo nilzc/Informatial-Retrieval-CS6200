@@ -1,0 +1,44 @@
+<mat-label class="text-large">ES Server Settings:</mat-label>
+<mat-form-field>
+  <mat-label>URL:</mat-label>
+  <input [(ngModel)]="url" matInput required>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>User Name (if any):</mat-label>
+  <input [(ngModel)]="userName" matInput placeholder="Please enter user name here">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Password (if any):</mat-label>
+  <input [(ngModel)]="passWord" matInput [type]="hide ? 'password' : 'text'" placeholder="Please enter password here">
+  <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+  </button>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Index Name:</mat-label>
+  <input [(ngModel)]="index" matInput required>
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Server Type</mat-label>
+  <mat-select #mode value="side" [(ngModel)]="serverType">
+    <mat-option value="local">Local</mat-option>
+    <mat-option value="cloud">ES Cloud</mat-option>
+  </mat-select>
+</mat-form-field>
+<!-- <mat-form-field>
+  <mat-label>Contain Hearder?</mat-label>
+  <mat-select #mode value="side">
+    <mat-option value="True">True</mat-option>
+    <mat-option value="False">False</mat-option>
+  </mat-select>
+</mat-form-field> -->
+<mat-form-field>
+  <mat-label>Assessor:</mat-label>
+  <input [(ngModel)]="assessor" matInput placeholder="i.e. Zhuocheng_Lin">
+</mat-form-field>
+<div class="button-field">
+  <button mat-raised-button (click)="setEsServer()">Confirm</button>
+</div>
+<div class="es_status">
+  <mat-label>Elasticsearch Status: {{status}}</mat-label>
+</div>

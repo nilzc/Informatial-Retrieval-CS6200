@@ -1,0 +1,135 @@
+.search_background {
+  background-color: #5B5EA6;
+  height: 100%;
+}
+.search_body {
+  height: 30%;
+  padding-top: 5em;
+  margin-bottom: 5%;
+}
+.search_form {
+  height: 100%;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_field {
+  width: 88%;
+  display: inline-block;
+  margin-right: 2%;
+}
+.search_icon {
+  height: 75%;
+  width: 10%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search_title {
+  height: 40%;
+  color: white;
+  text-align: center;
+  font-size: xxx-large;
+  padding-top: 20%;
+}
+.search_field_backgroud {
+  height: 28%;
+  border-radius: 7px;
+  background-color: white;
+  padding-left: 3%;
+  padding-right: 0.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.result {
+  height: 70%;
+  background-color: #5B5EA6;
+}
+.result_body {
+  background-color: white;
+  border-radius: 5px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.doc {
+  width: 80%;
+  height: 166px;
+  display: inline-block;
+  overflow: hidden;
+  border: 1em solid transparent;
+  padding: 0;
+}
+.assessment {
+  width: 14%;
+  height: 166px;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1em;
+}
+.assessment_title {
+  font-size: large;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.assessment_body {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.assessment mat-form-field {
+  width: 100%;
+}
+.button_field {
+  padding: 2% 5% 2% 5%;
+}
+.mat-raised-button {
+  width: 100%;
+  color: white;
+  background-color: #5B5EA6;
+}
+.result_title {
+  font-size: large;
+  padding-bottom: 4px;
+  overflow: hidden;
+}
+.result_title a {
+  font-weight: normal;
+}
+.result_title a:link {
+  text-decoration: none;
+}
+.result_title a:visited {
+  text-decoration: none;
+}
+.result_title a:hover {
+  text-decoration: underline;
+}
+.result_title a:active {
+  text-decoration: underline;
+}
+
+.next {
+  float: right;
+  margin-right: 7.5%;
+  margin-top: 1em;
+  margin-bottom: 10em;
+}
+.next button {
+  color: #5B5EA6;
+  background-color: white;
+}
+.no_result {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+.text-large {
+  font-size: large;
+}
+.text-center {
+  text-align: center;
+}
+
+.mat-form-field {
+  font-size: medium;
+  width: 100%;
+}
+.button-field {
+  padding: 15px 20px 10px 20px;
+}
+.mat-raised-button {
+  width: 100%;
+  color: white;
+  background-color: #5B5EA6;
+}
+
+.es_status {
+  bottom: 2em;
+  position: fixed;
+}

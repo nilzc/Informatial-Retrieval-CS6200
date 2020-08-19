@@ -1,0 +1,60 @@
+<div class="search_background">
+  <div class="search_body">
+    <form class="search_form">
+      <div id="top" class="search_title">Search</div>
+      <div class="search_field_backgroud">
+        <mat-form-field class="search_field" appearance="outline">
+          <mat-label>Enter Query Here</mat-label>
+          <input matInput [(ngModel)]="query" name=" ">
+          <!-- <mat-select #mode value="side" [(ngModel)]="query" name="query" (selectionChange)="reset()">
+            <mat-option value="College of Cardinals">College of Cardinals</mat-option>
+            <mat-option value="Ten Commandments">Ten Commandments</mat-option>
+            <mat-option value="Recent Popes">Recent Popes</mat-option>
+          </mat-select> -->
+        </mat-form-field>
+        <div class="search_icon">
+          <button mat-icon-button (click)=search(query)>
+            <mat-icon>search</mat-icon>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="result" *ngIf="result">
+    <div class="result_body" *ngFor="let doc of result; let i = index">
+      <div class="doc">
+        <div class="result_title">
+          <a href={{doc._id}} target="_blank" matTooltip={{doc._id}} matTooltipShowDelay="500">{{doc._source.title}}</a>
+        </div>
+        {{doc._source.text_content}}
+      </div>
+      <div class="assessment">
+        <div class="assessment_title">Assessment</div>
+        <mat-form-field appearance="fill" class="assessment_body">
+          <mat-label>Relevance</mat-label>
+          <mat-select (selectionChange)="setRelevance($event.value)">
+            <mat-option *ngFor="let rel of relevance" [value]="rel.value">
+              {{rel.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <div class="button_field">
+          <button mat-raised-button (click)="updateRelevance(doc._id)">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="next" *ngIf="nextPage">
+      <a href="#top">
+        <button mat-raised-button (click)=getNextPage()>
+          Next Page
+        </button>
+    </a>
+    </div>
+  </div>
+  <div class="no_result" *ngIf="notFound">
+    <mat-card>
+      - No Result -
+    </mat-card>
+  </div>
+</div>
