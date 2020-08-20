@@ -5,7 +5,7 @@ class ES:
 
     def __init__(self):
         self.hosts = ["https://f2ff43d409574698a747eaa43256d1e0.northamerica-northeast1.gcp.elastic-cloud.com:9243/"]
-        self.cloud_id = "CS6200:bm9ydGhhbWVyaWNhLW5vcnRoZWFzdDEuZ2NwLmVsYXN0aWMtY2xvdWQuY29tJGYyZmY0M2Q0MDk1NzQ2OThhNzQ3ZWFhNDMyNTZkMWUwJDU1ZTY4MGVhZjQ5MjRmNmM5NmY5YmIxNTRjZTQyN2Fk"
+        self.cloud_id = ""
         self.index = "hw5"
         self.es = Elasticsearch(hosts=self.hosts, timeout=60, clould_id=self.cloud_id, http_auth=('elastic', 'nRGUXlzD1f8kOT63iLehSG9a'))
         self.qrel = {"151901": {}, "151902": {}, "151903": {}}
